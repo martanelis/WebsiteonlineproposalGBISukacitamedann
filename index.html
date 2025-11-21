@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GBI Sukacita – Proposal Natal</title>
+
+<style>
+/* -------------------------- GLOBAL -------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    overflow-x: hidden;
+    background: linear-gradient(#6b0000, #300000);
+}
+
+/* Background image gereja */
+.bg-image {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url('https://i.ibb.co/GWH3qD6/christmas-church.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.4);
+    z-index: -2;
+}
+
+/* Salju bergerak (png) */
+.snow-overlay {
+    position: fixed;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background-image: url('https://i.ibb.co/nD0GvMt/snow.png');
+    animation: snow 20s linear infinite;
+    opacity: .45;
+    z-index: -1;
+}
+
+@keyframes snow {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 1000px; }
+}
+
+/* Fade In Animation */
+@keyframes fadein {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+.fadein { animation: fadein 1.5s ease forwards; }
+
+/* Glow text */
+.glow {
+    color: gold;
+    text-shadow: 0 0 10px gold, 0 0 20px orange, 0 0 30px yellow;
+}
+
+/* Container */
+.container {
+    width: 85%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 40px;
+    padding: 25px;
+    background: rgba(0,0,0,0.55);
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 20px rgba(255,255,255,0.15);
+}
+
+/* Header */
+.header {
+    text-align: center;
+}
+.header img {
+    width: 120px;
+    filter: drop-shadow(0 0 8px gold);
+}
+
+/* Buttons */
+.button {
+    background: gold;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    transition: .3s;
+}
+.button:hover {
+    background: white;
+    color: black;
+}
+
+/* Music Button */
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: gold;
+    padding: 12px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 0 10px gold;
+    z-index: 999;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+table, th, td {
+    border: 1px solid white;
+}
+th, td {
+    padding: 10px;
+    background: rgba(255,255,255,0.05);
+}
+
+/* Signature */
+.signature-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.signature {
+    width: 30%;
+    min-width: 150px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Rekening */
+.rekening {
+    background: rgba(255,215,0,0.25);
+    border-left: 5px solid gold;
+    padding: 15px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+input {
+    padding: 10px;
+    width: 90%;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Background -->
+<div class="bg-image"></div>
+<div class="snow-overlay"></div>
+
+<!-- MUSIC BUTTON -->
+<div class="music-btn" onclick="toggleMusic()">🎵</div>
+<audio id="bgMusic" loop>
+    <source src="https://www.dropbox.com/scl/fi/h4w0u0ctb3m8h8t8o5e6f/jinglebells.mp3?raw=1" type="audio/mpeg">
+</audio>
+
+<div class="container fadein">
+
+    <div class="header">
+        <img src="GBI.PNG">
+        <h2 class="glow">GEREJA BETHEL INDONESIA</h2>
+        <h2 class="glow">GBI SUKACITA WESLY HOUSE MEDAN</h2>
+        <p>Jl. Sei Batang Hari No. 134 Medan • Hp. 081214422214</p>
+
+        <h2 class="glow" style="margin-top:20px; font-size:25px;">
+            ✨ TUHAN YESUS HADIR UNTUK KELUARGA ✨
+        </h2>
+    </div>
+
+    <button class="button" onclick="window.print()">🖨 Cetak Halaman</button>
+
+    <p>Medan, 14 November 2025</p>
+    <p><strong>Nomor:</strong> 03/02/GBI-S/XI/2025</p>
+    <p><strong>Perihal:</strong> Permohonan Bantuan Dana Natal</p><br>
+
+    <p>Kepada Yth. Bapak/Ibu/Saudara/i</p>
+    <p>Di Tempat</p>
+
+    <p>Dengan hormat,</p>
+
+    <p>Salam sejahtera bagi kita semua. Kiranya kasih Tuhan menyertai kita setiap hari Kiranya kasih Tuhan yang Maha Esa selalu menyertai kita dalam setiap kegiatan dan
+aktivitas sehari-hari.
+Sehubungan dengan Perayaan Natal GBI Sukacita Wesly House Medan, merupakan salah
+satu bentuk kegiatan ucapan syukur kepada Tuhan karena ia telah mengaruniakan Anak-Nya yang
+tunggal Yesus Kristus agar setiap orang yang percaya kepadaNya tidak binasa melainkan memperoleh
+hidup yang kekal.Sebagai respon ucapan syukur jemaat Gereja GBI Sukacita Wesly House Medan
+melakukan serangkaian kegiatan dalam rangka menyambut hari Natal dengan Tema :” Allah Hadir
+Untuk Menyelamatkan Keluarga (Matius 1:21-24)”.
+Melalui perayaan Natal ini marilah kita sebagai pemuda Kristus hidup menjadi berkat bagi
+semua orang dimanapun kita berada sebagai cerminan dari kasih allah melalui Yesus Kristus diantara
+kita semua.
+.</p>
+
+    <p><strong>Hari/Tanggal:</strong> Jumat, 12 Desember 2025</p>
+    <p><strong>Tempat:</strong> Travellers Suites Hotel Medan</p>
+    <p><strong>Alamat:</strong> Jl. Listrik No.15, Medan Petisah</p>
+<p>Bahwa untuk kelancaran kegiatan tersebut kami memohon dukungan moril dan material dari
+Bapak/Ibu dan Saudara/Saudari dimana pun kita berada.Melalui surat ini kami juga melampirkan taken
+list untuk mempermudah dan membantu kegiatan diatas agar terlaksana dengan baik.
+Demikian proposal ini kami buat,atas perhatian dan bantuan yang di berikan kami ucapkan
+terima kasih.
+<p>
+    <!-- REKENING -->
+    <div class="rekening glow">
+        BANK BCA • 0223119023  
+        <br>A.n <b>GBI Sukacita</b>
+    </div>
+<h2 style="margin-top: 40px; text-align: center;" class="glow">FORMULIR TANDA TERIMA / DONASI</h2>
+    <form id="donationForm">
+        <label for="nama">Nama Donatur:</label>
+        <input type="text" id="nama" name="Nama_Donatur" required>
+
+        <label for="jumlah">Jumlah Donasi (Rp):</label>
+        <input type="number" id="jumlah" name="Jumlah_Donasi" required min="1000">
+
+        <label for="keterangan">Keterangan (Opsional):</label>
+        <input type="text" id="keterangan" name="Keterangan">
+
+        <button type="submit" class="button" style="width: 100%; margin-top: 20px;">KIRIM TANDA TERIMA</button>
+    </form>
+    
+    <p id="responseMessage" style="text-align: center; margin-top: 15px; font-weight: bold;"></p>
+    <!-- SIGNATURE -->
+    <div class="signature-section">
+
+    <!-- Ketua Panitia -->
+    <div class="signature">
+        <strong>Ketua Panitia Natal</strong><br><br>
+        <img src="ttdketua.png" style="width:160px; filter: drop-shadow(0 0 5px white);">
+        <br><u>Yamarianus Laia</u>
+    </div>
+
+    <!-- Bendahara -->
+    <div class="signature">
+        <strong>Bendahara Panitia Natal</strong><br><br>
+        <img src="ttdbendahara.png" style="width:160px; filter: drop-shadow(0 0 5px white);">
+        <br><u>Yaspidar Yanti Halawa</u>
+    </div>
+
+    <!-- Gembala -->
+    <div class="signature">
+        <strong>Gembala GBI Sukacita</strong><br><br>
+        <img src="ttdgembala.png" style="width:160px; filter: drop-shadow(0 0 5px white);">
+        <br><u>Pdt. Gokma Nababan S.Th</u>
+    </div>
+<script>
+    // GANTI URL DI BAWAH INI DENGAN URL WEB APP GOOGLE SCRIPT ANDA
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbx_alhjmgvQj8g1gpz15Ovm8OZEMi2T67foCZT4rh4jqFLONp2u8Z38JLKVgx8KuIIf/exec'; 
+    const form = document.getElementById('donationForm');
+    const responseMessage = document.getElementById('responseMessage');
+
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        responseMessage.textContent = 'Mengirim data...';
+        responseMessage.style.color = 'yellow';
+
+        const formData = new FormData(form);
+        const searchParams = new URLSearchParams(formData);
+
+        fetch(SCRIPT_URL, {
+            method: 'POST',
+            body: searchParams
+        })
+        .then(response => {
+             // Google Script mengembalikan teks sebagai respons
+            return response.text(); 
+        })
+        .then(data => {
+            console.log('Success:', data);
+            responseMessage.textContent = '✅ Data Berhasil Disimpan!';
+            responseMessage.style.color = 'lightgreen';
+            form.reset(); // Kosongkan formulir setelah berhasil
+            
+            // Opsional: Hilangkan pesan setelah 5 detik
+            setTimeout(() => {
+                responseMessage.textContent = '';
+            }, 5000);
+            
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            responseMessage.textContent = '❌ Terjadi Kesalahan! Coba Lagi.';
+            responseMessage.style.color = 'red';
+        });
+    });
+
+    // Fungsi untuk Music Button (Sudah ada di HTML Anda)
+    function toggleMusic() {
+        var music = document.getElementById("bgMusic");
+        if (music.paused) {
+            music.play();
+        } else {
+            music.pause();
+        }
+    }
+</script>
+
+</body>
+</html>
